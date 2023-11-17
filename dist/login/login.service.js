@@ -48,7 +48,7 @@ let LoginService = class LoginService {
     }
     async saveUser(req, res, userInfo) {
         const user = new this.userModel(userInfo);
-        console.log(user);
+        user.save();
     }
 };
 exports.LoginService = LoginService;

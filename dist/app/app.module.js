@@ -12,16 +12,14 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const home_module_1 = require("../home/home.module");
 const login_module_1 = require("../login/login.module");
-const mongoose_1 = require("@nestjs/mongoose");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            mongoose_1.MongooseModule.forRoot('mongodb+srv://Cluster92338:Cluster92338@cluster0.8xycg3k.mongodb.net/?retryWrites=true'),
             home_module_1.HomeModule,
-            login_module_1.LoginModule
+            login_module_1.LoginModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

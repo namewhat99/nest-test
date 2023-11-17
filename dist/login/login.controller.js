@@ -32,7 +32,7 @@ let loginController = class loginController {
 exports.loginController = loginController;
 __decorate([
     (0, common_1.Get)(),
-    (0, common_1.Render)('login'),
+    (0, common_1.Render)("login"),
     __param(0, (0, common_1.Req)()),
     __param(1, (0, common_1.Res)()),
     __metadata("design:type", Function),
@@ -40,25 +40,29 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], loginController.prototype, "renderLoginPage", null);
 __decorate([
-    (0, common_1.Get)('oauth'),
+    (0, common_1.Get)("oauth"),
     __param(0, (0, common_1.Req)()),
     __param(1, (0, common_1.Res)()),
-    __param(2, (0, common_1.Query)('code')),
+    __param(2, (0, common_1.Query)("code")),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Request, Response, String]),
+    __metadata("design:paramtypes", [Request,
+        Response,
+        String]),
     __metadata("design:returntype", void 0)
 ], loginController.prototype, "OAuthController", null);
 __decorate([
-    (0, common_1.Get)('user'),
+    (0, common_1.Get)("user"),
     __param(0, (0, common_1.Req)()),
     __param(1, (0, common_1.Res)()),
-    __param(2, (0, common_1.Query)('email')),
+    __param(2, (0, common_1.Query)("email")),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Request, Response, String]),
+    __metadata("design:paramtypes", [Request,
+        Response,
+        String]),
     __metadata("design:returntype", void 0)
 ], loginController.prototype, "getUserController", null);
 exports.loginController = loginController = __decorate([
-    (0, common_1.Controller)('/login'),
+    (0, common_1.Controller)("/login"),
     __metadata("design:paramtypes", [login_service_1.LoginService])
 ], loginController);
 //# sourceMappingURL=login.controller.js.map
