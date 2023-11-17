@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="login.css" />
+        <title>WAS</title>
+    </head>
+    <body>
+        <form method="POST" action="/signin" class="register-1">
+            <div class="nav">
+                <div class="frame-1">
+                    <div class="button-small">
+                        <div class="text">로그인</div>
+                    </div>
+                </div>
+                <div class="hello-web">HELLO, WEB!</div>
+            </div>
+            <div class="frame-2">
+                <div class="display-title">회원가입</div>
+            </div>
+            <div class="frame-3">
+                <div class="input-info">
+                    <div class="label">이메일</div>
+                    <input
+                        name="email"
+                        type="text"
+                        class="text2"
+                        placeholder="이메일을 입력해주세요" />
+                </div>
+                <div class="input-info">
+                    <div class="label">비밀번호</div>
+                    <input
+                        name="password"
+                        type="text"
+                        class="text2"
+                        placeholder="비밀번호를 입력해주세요" />
+                </div>
+            </div>
+            <div class="button-large">
+                <button type="submit" class="button-large">
+                    <div class="text3">로그인</div>
+                </button>
+            </div>
+        </form>
+        
+        <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=XIzQyL6Jt9Xcl5tbCdlg&redirect_uri=http://127.0.0.1:3003/login/oauth&state=RANDOM_STATE;">
+            <button><img src="naverLogin.png" style="position:relative; width: 300px; height: 70px;"></button>
+        </a>
+    </body>
+</html>
